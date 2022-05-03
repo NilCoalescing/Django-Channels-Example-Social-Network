@@ -1,0 +1,2 @@
+django==3.0.7
+djangochannelsrestframework==0.1.0
