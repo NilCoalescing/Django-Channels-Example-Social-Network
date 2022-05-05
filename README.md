@@ -1,6 +1,6 @@
 # Django Channels Example Social Network
 
-This is an example real-time Social built using [Django Channels Rest Framework](https://github.com/LostMoa/djangochannelsrestframework).
+This is an example real-time Social built using [Django Channels Rest Framework](https://github.com/NilCoalescing/djangochannelsrestframework).
 
 See our blog post [Build a Realtime Social Network using Django Channels](https://nilcoalescing.com/blog/BuildingARealtimeSocialNetworkUsingDjangoChannels/) for a detail breakdown of this example.
 
@@ -30,7 +30,7 @@ This will log you (and create a new user account if the user name does not alrea
 
 Every message you send from your client to the server should include a `request_id`. This should be a random string or int. When the server responses you your message it will include the `request_id` of the request that is is responding to. This is use-full client-side so that you can create a Promise/Futures based api interface.
 
-The consumer uses the `action` value to determine what `action` to call from your consumer. The RestApi style mixin actions provided by [Django Channels Rest Framework](https://github.com/LostMoa/djangochannelsrestframework) expect additional data for the DjangoRestFramwork sterilisers to be nested within a `data` property.    
+The consumer uses the `action` value to determine what `action` to call from your consumer. The RestApi style mixin actions provided by [Django Channels Rest Framework](https://github.com/NilCoalescing/djangochannelsrestframework) expect additional data for the DjangoRestFramwork sterilisers to be nested within a `data` property.    
 
 #### Creating a Post
 
